@@ -368,6 +368,10 @@
    transition: 0.2s all cubic-bezier(0.4, -0.1, 0, 1.1);
    margin-left: 19px;
 
+   @include breakpoint(md){
+      display: block;
+   }
+
    .menu-icon {
       width: 29px;
       height: 4px;

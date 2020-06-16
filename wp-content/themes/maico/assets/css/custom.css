@@ -556,6 +556,9 @@ form .form-group {
   -o-transition: 0.2s all cubic-bezier(0.4, -0.1, 0, 1.1);
   transition: 0.2s all cubic-bezier(0.4, -0.1, 0, 1.1);
   margin-left: 19px; }
+  @media (max-width: 992px) {
+    .menu-button {
+      display: block; } }
   .menu-button .menu-icon {
     width: 29px;
     height: 4px;
