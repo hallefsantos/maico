@@ -44,6 +44,10 @@
          li {
             display: inline-block;
             margin-left: 3rem;
+
+            @include breakpoint(lg){
+               margin-left: 1rem;
+            }
          }
 
          a {
@@ -68,8 +72,16 @@
             display: inline-block;
             margin-right: 10px;
 
+            @include breakpoint(lg){
+               margin-right: 5px;
+            }
+
             a {
                font-size: 30px;
+
+               @include breakpoint(lg){
+                  font-size: 22px;
+               }
 
                &:link,
                &:visited {
@@ -120,7 +132,11 @@
 
          .logo {
             display: block;
-            width: 150px;
+            width: 15rem;
+
+            @include breakpoint(lg){
+               width: 13rem;
+            }
          }
 
          .container {
@@ -130,7 +146,9 @@
 
          .menu {
             a {
-
+               @include breakpoint(lg){
+                  font-size: 15px;
+               }
                &:link,
                &:visited {
                   color: #4b8aab;

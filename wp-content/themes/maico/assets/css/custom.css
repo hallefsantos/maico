@@ -315,6 +315,9 @@ form .form-group {
     .header .nav .menu li {
       display: inline-block;
       margin-left: 3rem; }
+      @media (max-width: 1200px) {
+        .header .nav .menu li {
+          margin-left: 1rem; } }
     .header .nav .menu a:link, .header .nav .menu a:visited {
       color: #f3f2d3; }
     .header .nav .menu a:hover {
@@ -326,8 +329,14 @@ form .form-group {
       .header .nav .social li {
         display: inline-block;
         margin-right: 10px; }
+        @media (max-width: 1200px) {
+          .header .nav .social li {
+            margin-right: 5px; } }
         .header .nav .social li a {
           font-size: 30px; }
+          @media (max-width: 1200px) {
+            .header .nav .social li a {
+              font-size: 22px; } }
           .header .nav .social li a:link, .header .nav .social li a:visited {
             color: #FFF; }
       @media screen and (max-width: 1400px) {
@@ -364,7 +373,10 @@ form .form-group {
           padding: 1rem 0; } }
       .header .nav.scrolled .logo {
         display: block;
-        width: 150px; }
+        width: 15rem; }
+        @media (max-width: 1200px) {
+          .header .nav.scrolled .logo {
+            width: 13rem; } }
       .header .nav.scrolled .container {
         -webkit-justify-content: space-between;
         -moz-justify-content: space-between;
@@ -375,6 +387,9 @@ form .form-group {
         -moz-align-items: center;
         -ms-align-items: center;
         align-items: center; }
+      @media (max-width: 1200px) {
+        .header .nav.scrolled .menu a {
+          font-size: 15px; } }
       .header .nav.scrolled .menu a:link, .header .nav.scrolled .menu a:visited {
         color: #4b8aab; }
       .header .nav.scrolled .social {
