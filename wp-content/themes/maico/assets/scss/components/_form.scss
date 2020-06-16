@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Form - begin
+   ========================================================================== */
+
+form {
+    .form-group{
+
+        margin-bottom: 18px;
+        position: relative;
+
+        .form-control{
+            width: 100%;
+            background-color: #E3E2DE;
+            border: none;
+            padding: 24px 25px 10px;
+            @include border-radius(30px);
+            border: 1px solid transparent;
+            font-size: 16px;
+            color: #777;
+            &:focus {
+                outline: none;
+            }
+
+            &.wpcf7-not-valid {
+                border: 1px solid $color-red;
+            }
+        }
+
+        textarea.form-control {
+            height: 120px;
+        }
+
+        label {
+            position: absolute;
+            top: 17px;
+            left: 25px;
+            display: inline-block;
+            z-index: 1;
+            transition: all .25s ease;
+            opacity: .5;
+            pointer-events: none;
+            
+            &.active {
+                font-size: 11px;
+                top: 5px;
+                opacity: 1;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+
+        .wpcf7-submit {
+            background-color: #97C21B;
+            border: none;
+            cursor: pointer;
+            margin: 0 auto;
+            display: table;
+            color: $color-white;
+            padding: 15px 70px;
+            font-size: 18px;
+            font-weight: 600;
+            @include border-radius(25px);
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .wpcf7-form-control-wrap {
+            display: block;
+        }
+
+        .wpcf7-not-valid-tip {
+            background-color: $color-red;
+            color: #FFF;
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 17px;
+            @include border-radius(5px);
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+
+        .ajax-loader {
+            left: calc(50% - 130px);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.check {
+            margin: 70px 0;
+
+
+            > label {
+                font-weight: 600;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 50px;
+                font-style: italic;
+                font-size: 20px;
+            }
+            label {
+                position: relative;
+                top: initial;
+                left: initial;
+                pointer-events: all;
+                opacity: 1;
+            }
+
+            .wpcf7-radio,
+            .wpcf7-checkbox{
+                // background-color: red;
+                @include flexbox();
+                @include justify-content(space-between);
+                width: 100%;
+                // margin: 50px 0;
+
+                .wpcf7-list-item {
+                    margin: 0;
+                }
+
+                input {
+                    opacity: 0;
+                    position: absolute;
+                }
+            }
+
+            .wpcf7-list-item-label {
+                // background-color: red;
+                padding: 12px 40px;
+                cursor: pointer;
+                color: $color-black;
+                @include border-radius(50px);
+                border: 2px solid #E3E2DE;
+                transition: all 0.4s;
+                &.active {
+                    background: linear-gradient(131.73deg, #FF8A00 -88.37%, #EDAB00 61.58%);
+                    font-weight: 600;
+                    font-style: italic;
+                    // border-color: $color-primary;
+                }
+
+                &:hover {
+                    background: linear-gradient(131.73deg, #FF8A00 -88.37%, #EDAB00 61.58%);
+                    // border-color: $color-primary;
+                    // font-weight: 600;
+                }
+
+            }
+        }
+
+        &.radio {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Form - end
+   ========================================================================== */

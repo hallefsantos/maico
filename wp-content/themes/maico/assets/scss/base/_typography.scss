@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/myriad-pro/myriadpro-regular.woff") format("woff");
+    font-weight: 300;
+}
+
+body {
+    // line-height: 1;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5e45;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1;
+    &:link,
+    &:visited {
+        transition: color 0.2s;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
